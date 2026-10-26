@@ -5,22 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multimedia /Formularios</title>
 </head>
+
+<style>
+    textarea{
+        resize: none;
+    }
+</style>
+
 <body>
-    <h1>Bienvenidos a la clase 4</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum debitis nobis saepe corrupti quod maiores suscipit temporibus minus voluptas maxime nulla sunt, dolorem est ipsum, ut assumenda atque, corporis tempore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse itaque eligendi odit? Nemo enim esse sint ex, voluptates iste itaque veritatis laborum labore. Atque est maiores ducimus autem doloremque!</p>
-    <footer>
-        <p>Sitio desarrollado por UTN</p>
-        <nav>
-            <ul>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>X</li>
-                <li>reddit</li>
-                <li>Gmail</li>
-            </ul>
-        </nav>
-    </footer>
-    
+    <h1>Clase 4 - Formularios</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in aperiam totam minima nobis perferendis enim, minus nulla esse id aut. Eius aliquam libero amet soluta modi voluptas, dolorum nulla!</p>   
+    <form>
+        <input type="text" placeholder="Ingrese su nombre" required autocomplete="off">
+        <input type="email" placeholder="Ingrese su email">
+        <input type="password" placeholder="Ingrese su contraseña" required>
+        <input type="number" placeholder="Ingrese su edad">
+        <input type="color">
+        <input type="date">
+        <input type="range" min="0" max="100" step="10">
+        <select>
+            <option value="1">Opcion1</option>
+            <option value="2">Opcion2</option>
+            <option value="3">Opcion3</option>
+            <option value="4">Opcion4</option>
+            <option value="5">Opcion5</option>
+            <option value="6">Opcion6</option>
+        </select>
+        <div>
+        <input type="radio" name="animal" id="inputperro">
+        <label for="inputperro">perro<label>
+        <input type="radio" name="animal" id="inputgato">
+        <label for="inputgato">gato<label>
+        <input type="radio" name="animal" id="inputtortuga">
+        <label for="inputtortuga">tortuga</label>
+        </div>
+
+        <div>
+            <h3>Intereses</h3>
+            <input type="checkbox" id="programacion">
+            <label for="programacion">Programacion</label>
+             <input type="checkbox" id="dibujo">
+            <label for="dibujo">Dibujo</label>
+             <input type="checkbox" id="pesca">
+            <label for="pesca">Pesca</label>
+        </div>
+        <div>
+            <h3>Mensaje</h3>
+            <textarea placeholder="Ingrese su mensaje"></textarea>
+        </div>
+        <div>
+            <input type="file" multiple>
+        </div>
+        <button>Enviar</button>
+    </form>
 </body>
 </html>
